@@ -34,8 +34,8 @@ const NotificationIco1 = () => {
           y2="16.2484"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#37AEE2" />
-          <stop offset="1" stop-color="#1E96C8" />
+          <stop stopColor="#37AEE2" />
+          <stop offset="1" stopColor="#1E96C8" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_298_2488"
@@ -45,8 +45,8 @@ const NotificationIco1 = () => {
           y2="15.2002"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EFF7FC" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#EFF7FC" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>

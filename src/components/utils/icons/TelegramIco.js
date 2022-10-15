@@ -34,8 +34,8 @@ const TelegramIco = () => {
           y2="45"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#37AEE2" />
-          <stop offset="1" stop-color="#1E96C8" />
+          <stop stopColor="#37AEE2" />
+          <stop offset="1" stopColor="#1E96C8" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_286_14"
@@ -45,8 +45,8 @@ const TelegramIco = () => {
           y2="40.6686"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EFF7FC" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#EFF7FC" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
       </defs>
     </svg>
