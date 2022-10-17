@@ -21,11 +21,16 @@ function App() {
     // await signOut();
   };
 
-  //   if (!address) return <SignIn connectHandler={connect} />;
+  // if (!address) return <SignIn connectHandler={connect} />;
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Landing disconnect={disconnectHandler} />} />
+        <Route
+          path="/"
+          element={
+            <Landing connectHandler={connect} disconnect={disconnectHandler} />
+          }
+        />
         {/* <Route path="/" element={<Home disconnect={disconnectHandler} />} /> */}
         <Route
           path="/testNotification"

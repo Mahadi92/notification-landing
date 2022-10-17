@@ -21,14 +21,17 @@ import BlockchainIco4 from "./utils/icons/BlockchainIco4";
 import NotificationIco1 from "./utils/icons/NotificationIco1";
 import NotificationIco2 from "./utils/icons/NotificationIco2";
 import NotificationIco3 from "./utils/icons/NotificationIco3";
+import { useMediaQuery } from "@chakra-ui/react";
 
 const Landing = ({ connectHandler }) => {
+  const [isMobile] = useMediaQuery("(min-width: 992px)");
   return (
     <Box
       minH="100vh"
       h={{ base: "auto", lg: "100vh" }}
+      // height={"100vh"}
       fontSize="xl"
-      sx={{ overflow: "hidden" }}
+      sx={isMobile && { overflow: "hidden" }}
     >
       <Flex
         h={"10vh"}
@@ -49,11 +52,10 @@ const Landing = ({ connectHandler }) => {
           Connect Wallet
         </Button>
       </Flex>
-      <Box pt={10} px={{ base: 5, sm: 10, lg: 20 }}>
+      <Box pt={10} px={{ base: 5, sm: 10, lg: 20 }} h={"90vh"}>
         <Grid
           templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
           gap={6}
-          h={"90vh"}
         >
           <GridItem p={{ base: 5, xl: 20 }}>
             <Flex
@@ -98,9 +100,14 @@ const Landing = ({ connectHandler }) => {
             </Box>
             <Image
               src={mobileImg}
-              mb={-10}
               objectFit={"cover"}
-              sx={{ width: "420px", height: "785px" }}
+              mt={{ base: 0, lg: "20" }}
+              sx={{
+                // display: "block",
+                // margin: "20px",
+                width: "420px",
+                height: "785px",
+              }}
               alt=""
             />
             <Box className="landing__img_box-bottom">
